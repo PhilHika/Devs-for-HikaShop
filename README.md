@@ -1,6 +1,5 @@
-# Project Name
-
-![License](https://img.shields.io/badge/License-MIT-green.svg) ![Version](https://img.shields.io/badge/Version-1.0-blue.svg)
+## Devs-for-HikaShop
+ Discover my various works for HikaShop, well only the free ones for obvious reasons.
 
 summary :
 An example of my work for the HikaShop e-commerce site, using Joomla.
@@ -9,7 +8,7 @@ This is only a small part of my work!
 
 HikaShop Website : https://www.hikashop.com/
 
-## 📌 Plugins
+## Plugins
 
 - ✅ Fedex 2 : Shipping service plugin [2024]
      Built-in HikaShop since 5.1.0
@@ -22,9 +21,7 @@ HikaShop Website : https://www.hikashop.com/
     In HikaShop Marketplace => https://www.hikashop.com/marketplace/product/232-shipstation.html
 
 
-## 🚀 Installation
-
-### Prerequisites  
+## Prerequisites  
 - his ShipStation plugin is compatible with all the editions of HikaShop
 - Compatible with PHP 5 minimum
 - Joomla & HikaShop 
