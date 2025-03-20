@@ -1,7 +1,6 @@
 ## Devs-for-HikaShop
  Discover my various works for HikaShop, well only the free ones for obvious reasons.
 
-summary :
 Examples of my work for the HikaShop e-commerce site, using Joomla.
 But only the free plugin versions, of course.
 This is only a small part of my work!
