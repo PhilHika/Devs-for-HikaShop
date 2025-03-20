@@ -7,9 +7,12 @@ An example of my work for the HikaShop e-commerce site, using Joomla.
 But only the free plugin versions, of course.
 This is only a small part of my work!
 
+HikaShop Website : https://www.hikashop.com/
+
 ## 📌 Plugins
 
 - ✅ Fedex 2 : Shipping service plugin [2024]
+     Built-in HikaShop since 5.1.0
 - ✅ Product order listing : Product management & statistics [2023]
     In HikaShop Marketplace => https://www.hikashop.com/marketplace/product/254-product-order-history.html
 - ✅ Rbsbusinessgateway & Rbsglobalgateway : Payment plugin []
@@ -22,11 +25,6 @@ This is only a small part of my work!
 ## 🚀 Installation
 
 ### Prerequisites  
-- Joomla & HikaShop Required dependencies  
-
-### Steps  
-```bash
-git clone https://github.com/username/project-name.git
-cd project-name
-npm install  # or another command based on your project
-npm start    # or another command to run it
+- his ShipStation plugin is compatible with all the editions of HikaShop
+- Compatible with PHP 5 minimum
+- Joomla & HikaShop 
