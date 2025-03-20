@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0" type="plugin" group="hikashop" method="upgrade">
+	<name>HikaShop: Product Orders Listing</name>
+	<creationDate>21 12 2023</creationDate>
+	<version>1.0.1</version>
+	<author>HikaShop</author>
+	<authorEmail>contact@hikashop.com</authorEmail>
+	<authorUrl>http://www.hikashop.com</authorUrl>
+	<copyright>Copyright (C) 2010-2023 HIKASHOP SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Display orders listing on backend product page</description>
+	<files>
+		<filename plugin="productorderlisting">productorderlisting.php</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+		</fields>
+	</config>
+</extension>

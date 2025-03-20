@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>ShipStation plugin</name>
+	<creationDate>{__DAY__} {__MONTH__} {__YEAR__}</creationDate>
+	<version>{__PLUGIN_VERSION__}</version>
+	<author>HikaShop</author>
+	<authorEmail>dev@hikashop.com</authorEmail>
+	<authorUrl>http://www.hikashop.com</authorUrl>
+	<copyright>(C) 2010-{__YEAR__} HIKARI SOFTWARE. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>ShipStation plugin to manage orders shipping status</description>
+	<files>
+		<filename plugin="shipstation">shipstation.php</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+
+		<param name="user" type="text" size="20" label="HIKA_USERNAME" description="SHIPSTATION_USERNAME" />
+		<param name="pass" type="text" size="20" label="HIKA_PASSWORD" description="SHIPSTATION_PASSWORD" />
+		<param name="url" type="text" size="20" label="FOR_SHIPSTATION_SETTING_PAGE" default="YourWebsite.com/index.php?option=com_hikashop&amp;ctrl=shipstation" description="URL" />
+
+		<param name="customermail" type="radio" default="0" label="ADD_SHIPSTATION_DATA">
+			<option value="0">HIKASHOP_NO</option>
+			<option value="1">HIKASHOP_YES</option>
+		</param>
+
+		<param name="sqlorder" type="radio" default="order_invoice_created" label="USE_SHIPSTATION_FOR">
+			<option value="order_invoice_created">USE_SHIPSTATION_FOR_PAID_ORDERS</option>
+			<option value="order_created">USE_SHIPSTATION_FOR_UNPAID_ORDERS</option>
+		</param>
+
+		<param name="orderstatus" type="radio" default="0" label="UPDATE_ORDER_STATUS_TO_SHIPPED">
+			<option value="0">HIKASHOP_NO</option>
+			<option value="confirmed">CONFIRMED</option>
+			<option value="shipped">SHIPPED</option>
+		</param>
+
+		<param name="debug" type="radio" default="0" label="HIKA_DEBUG_MODE">
+			<option value="0">HIKASHOP_NO</option>
+			<option value="1">HIKASHOP_YES</option>
+		</param>
+
+	</params>
+
+	<config>
+
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+
+				<field name="user" type="text" size="20" label="HIKA_USERNAME" description="SHIPSTATION_USERNAME" />
+				<field name="pass" type="text" size="20" label="HIKA_PASSWORD" description="SHIPSTATION_PASSWORD" />
+				<field name="url" type="readonly" size="20" label="FOR_SHIPSTATION_SETTING_PAGE" default="YourWebsite.com/index.php?option=com_hikashop&amp;ctrl=shipstation" description="URL" />
+
+				<field name="customermail" type="radio" default="0" label="EMAIL_NOTIFICATION_TO_CUSTOMER" class="btn-group btn-group-yesno">
+					<option value="0">HIKASHOP_NO</option>
+					<option value="1">HIKASHOP_YES</option>
+				</field>
+
+				<field name="sqlorder" type="radio" default="order_invoice_created" label="USE_SHIPSTATION_FOR">
+					<option value="order_invoice_created">USE_SHIPSTATION_FOR_PAID_ORDERS</option>
+					<option value="order_created">USE_SHIPSTATION_FOR_UNPAID_ORDERS</option>
+				</field>
+
+				<field name="orderstatus" type="radio" default="0" label="UPDATE_ORDER_STATUS">
+					<option value="0">HIKASHOP_NO</option>
+					<option value="confirmed">CONFIRMED</option>
+					<option value="shipped">SHIPPED</option>
+				</field>
+
+				<field name="debug" type="radio" default="0" label="HIKA_DEBUG_MODE" class="btn-group btn-group-yesno">
+					<option value="0">HIKASHOP_NO</option>
+					<option value="1">HIKASHOP_YES</option>
+				</field>
+
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
